@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Freight Big Pro';
+    src: url("./fonts/Freight Big Pro Light.otf") format('opentype');
+}
+
 $soft-white: #f1eae0;
 $nude: #b6a492;
 $pale-nude: #e7d3c9;
@@ -10,6 +15,9 @@ $gray: #d4d1cb;
 $pink: #d19f8f;
 $orange: #b45118;
 $soft-pink: #d0b0af;
+
+$nav-tablet-width: 50%;
+$nav-mobile-width: 80%;
 
 body {
 	overflow-x: hidden;
@@ -136,7 +144,7 @@ a {
 
 .open-enter-active {
 	height: 14rem;
-	transition: height .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+	transition:  .3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .open-enter-done {
@@ -149,7 +157,7 @@ a {
 
 .open-exit-active {
 	height: 10px;
-	transition: height .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+	transition:  .3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .open-exit-done {
@@ -419,8 +427,7 @@ a {
 
 @media (max-width: 768px) {
 	.nav-wrapper {
-		width: 40%;
-		height: 100%;
+		width: $nav-tablet-width;
 
 		 #logo {
 			left: 2rem;
@@ -432,11 +439,17 @@ a {
 	}
 
 	.nav {
-		width: 40%;
+		left: 100%;
+		width: $nav-tablet-width;
 		height: 100%;
 	    display: flex;
 	    align-items: center;
 	    justify-content: center;
+	    transform: translateY(0);
+
+	    &.hover {
+	    	transform: translateY(0);
+	    }
 	}
 
 	.open-enter {
@@ -444,21 +457,19 @@ a {
 	}
 
 	.open-enter-active {
-		left: 60%;
-		transition: .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+		left: $nav-tablet-width;
 	}
 
 	.open-enter-done {
-		left: 60%;
+		left: $nav-tablet-width;
 	}
 
 	.open-exit {
-		left: 60%;
+		left: $nav-tablet-width;
 	}
 
 	.open-exit-active {
 		left: 100%;
-		transition: .3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	}
 
 	.open-exit-done {
@@ -482,6 +493,8 @@ a {
 
 @media (max-width: 650px) {
 	.nav-wrapper {
+		width: $nav-mobile-width;
+
 		.menu {
 			right: 2rem;
 			top: 2rem;
@@ -489,6 +502,22 @@ a {
 		#logo {
 			left: 1rem;
 		}
+	}
+
+	.nav {
+		width: $nav-mobile-width;
+	}
+
+	.open-enter-active {
+		left: 100% - $nav-mobile-width;
+	}
+
+	.open-enter-done {
+		left: 100% - $nav-mobile-width;
+	}
+
+	.open-exit {
+		left: 100% - $nav-mobile-width;
 	}
 
 	h2 {

@@ -356,4 +356,16 @@
 			font-size: 1.5em;
 		}
 	}
+
+	.photo-header-section-wrapper {
+		padding: 0 1em;
+
+		#placeholder {
+			display: none;
+		}
+
+		.bg {
+			display: none;
+		}
+	}
 }
