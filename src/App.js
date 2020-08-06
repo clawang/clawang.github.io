@@ -8,10 +8,6 @@ import './App.css';
 import './DefaultStyles.scss';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import logo from './media/claire.png';
-import resume from './media/notepad.svg';
-
-let previousPath = "/";
-
 
 function App({location})  {
 	const [currentPath, setCurrentPath] = useState(location.pathname);
