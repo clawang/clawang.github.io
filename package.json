@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://clawang.github.io/new-portfolio",
+  "homepage": "http://clawang.github.io/",
   "dependencies": {
     "-": "0.0.1",
     "@testing-library/jest-dom": "^4.2.4",
