@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2521ee07.chunk.css",
+    "main.js": "/static/js/main.bb65b3ff.chunk.js",
+    "main.js.map": "/static/js/main.bb65b3ff.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
+    "static/js/2.df0fd747.chunk.js": "/static/js/2.df0fd747.chunk.js",
+    "static/js/2.df0fd747.chunk.js.map": "/static/js/2.df0fd747.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cd2a6985c961c5ab47024d1972602ad1.js": "/precache-manifest.cd2a6985c961c5ab47024d1972602ad1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.2521ee07.chunk.css.map": "/static/css/main.2521ee07.chunk.css.map",
+    "static/js/2.df0fd747.chunk.js.LICENSE.txt": "/static/js/2.df0fd747.chunk.js.LICENSE.txt",
+    "static/media/bluestripes.jpg": "/static/media/bluestripes.40677108.jpg",
+    "static/media/claire.png": "/static/media/claire.8c291894.png",
+    "static/media/linkedin.svg": "/static/media/linkedin.c54c1027.svg",
+    "static/media/login.png": "/static/media/login.4ac867a2.png",
+    "static/media/mail.svg": "/static/media/mail.9d216170.svg",
+    "static/media/paris.jpg": "/static/media/paris.55e435a8.jpg",
+    "static/media/portfolio.png": "/static/media/portfolio.858f360f.png",
+    "static/media/tot.png": "/static/media/tot.921c406a.png",
+    "static/media/tulum.jpg": "/static/media/tulum.a4bb57ec.jpg",
+    "static/media/virtualnyc.png": "/static/media/virtualnyc.36e6d00f.png",
+    "static/media/westvillage.jpg": "/static/media/westvillage.50160ea6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5fc83a6.js",
+    "static/js/2.df0fd747.chunk.js",
+    "static/css/main.2521ee07.chunk.css",
+    "static/js/main.bb65b3ff.chunk.js"
+  ]
+}
