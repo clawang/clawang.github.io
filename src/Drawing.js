@@ -119,11 +119,11 @@ class Drawing extends React.Component {
 
 function Polaroid(props) {
 	const colors = {
-		blush: "#cc8968",
-		nude: "#cfb9aa",
-		terracotta: "#b8813d",
+		blush: "#d09b7b",
+		nude: "#d0b0af",
+		terracotta: "#bb6f1c",
 		blue: "#cbd2d4",
-		darkGreen: "#2a4c3d",
+		darkGreen: "#3A4F41",
 		lightGreen: "#81957a"
 	}
 	return (

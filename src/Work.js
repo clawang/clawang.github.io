@@ -12,29 +12,33 @@ const projects = [
 		title: "Real-Time Multiplayer Sheng Ji",
 		src: shengji,
 		link: "https://murmuring-plateau-52201.herokuapp.com/",
+		linkText: "View Demo",
 		tags: "node.js, express, socket.io, mongoDB, SASS",
 		description: "Developed a real-time multiplayer web game to play Sheng Ji, a classic Chinese card game. It's a tradition in my family to play this game at get togethers, and ever since my parents moved out of the country and my sister and I have gone to college, we haven't had the chance to play. I thought this would be a good temporary solution until we are all together again."
 	},
 	{
 		title: "Virtual New York City",
 		src: wsp,
-		link: "https://murmuring-plateau-52201.herokuapp.com/",
+		link: "/dotw-final-project",
+		linkText: "View Demo",
 		tags: "HTML, javascript, CSS animation, adobe illustrator",
 		description: "Illustrated and developed interactive animated web drawings of New York City, as a homage to the city during the thick of the pandemic. I chose locations that meant a lot to me, personally, as I missed the vibrance that they usually held."
 	},
 	{
 		title: "Twenty Over Ten Websites",
 		src: tot,
-		link: "/",
+		link: "/tot",
+		linkText: "See More",
 		tags: "HTML, CSS, jQuery",
 		description: "During my time at Twenty Over Ten, I designed and developed a number of websites for various financial advisors. Here are just a few examples."
 	},
 	{
 		title: "Portfolio Website",
 		src: screen,
-		link: "#",
+		link: "/",
+		linkText: "See the CSS drawing",
 		tags: "react.js, SASS",
-		description: "I developed this website to showcase my professional and personal work using React.js, SASS/CSS."
+		description: "I developed this website to showcase my professional and personal work using React.js, SASS/CSS. For the homepage, I challenged myself to create a 2D scene entirely out of HTML elements and CSS. Some of the elements are animated, and others (like the Polaroids) are interactive."
 	}
 ];
 
@@ -49,7 +53,7 @@ class GalleryItem extends React.Component {
 					<p className="tags">{this.props.tags}</p>
 					<h2>{this.props.title}</h2>
 					<p>{this.props.description}</p>
-					<p><a href={this.props.link} className="button" style={{"marginLeft": 0}}>See More</a></p>
+					<p><a href={this.props.link} className="button" style={{"marginLeft": 0}}>{this.props.linkText}</a></p>
 				</div>
 			</div>
 		);
@@ -61,7 +65,7 @@ class Gallery extends React.Component {
 		return (
 			<div className="gallery-wrapper">
 				{this.props.items.map(item => (
-					<GalleryItem img={item.src} link={item.link} title={item.title} tags={item.tags} description={item.description} />
+					<GalleryItem img={item.src} link={item.link} title={item.title} tags={item.tags} description={item.description} linkText={item.linkText} />
 				))}
 			</div>
 		);
