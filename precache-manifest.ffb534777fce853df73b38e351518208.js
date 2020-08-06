@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c2470df6247973e93c29d5f83c1fc5c8",
+    "revision": "abbfb2a7d990af5d58e517deb892c776",
     "url": "/index.html"
   },
   {
-    "revision": "45c9d95ee9abd430e334",
-    "url": "/static/css/main.f5b0eaac.chunk.css"
+    "revision": "0a6c467809a3fbf72c67",
+    "url": "/static/css/main.3c1248e1.chunk.css"
   },
   {
     "revision": "ac19c57c19ed0c8d0d46",
@@ -16,16 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.32c9bbc1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "45c9d95ee9abd430e334",
-    "url": "/static/js/main.415f91f6.chunk.js"
+    "revision": "0a6c467809a3fbf72c67",
+    "url": "/static/js/main.bb681433.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
     "url": "/static/js/runtime-main.e5fc83a6.js"
   },
   {
-    "revision": "a5dcd7c1c0430be944036b3eda943214",
-    "url": "/static/media/Freight Big Pro Light.a5dcd7c1.otf"
+    "revision": "6bd4d002059d80e1c1352b2b4530a7c4",
+    "url": "/static/media/Freight Big Book.6bd4d002.otf"
+  },
+  {
+    "revision": "bf9f5d50c1b928ff21436517a1a95ad9",
+    "url": "/static/media/ProximaNova-Regular.bf9f5d50.otf"
   },
   {
     "revision": "40677108180707590c57467f014f697a",
