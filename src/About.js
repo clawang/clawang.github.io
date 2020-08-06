@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import './About.scss';
 import {StandardSection, PhotoHeaderSection, Footer} from './Layouts';
 import paris from './media/paris.jpg';
@@ -57,7 +58,7 @@ class About extends React.Component {
 						{jobs.map(position => (
 							<Position title={position.title} company={position.company} date={position.date} description={position.description} />
 						))}
-						<p><a href="" className="button">Resume</a></p>
+						<p><Link to="/resume" className="button">Resume</Link></p>
 					</div>
 				</StandardSection>
 				<Footer />

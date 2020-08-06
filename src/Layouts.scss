@@ -32,6 +32,11 @@
 	}
 }
 
+.section-wrapper.blush {
+	background: #cf9b7a;
+	h1 {color: white}
+}
+
 .top-section {
 	padding-top: 10rem;
 	padding-bottom: 4rem;
@@ -71,10 +76,19 @@
 		img {
 			width: 100%;
 			transition: 0.3s;
+			margin-bottom: 0.6em;
 		}
 
 		&:hover {
 			img {opacity: 0.8}
+		}
+
+		p {
+			transition: 0.2s;
+		}
+
+		a {
+			text-decoration: none;
 		}
 	}
 }
@@ -267,13 +281,6 @@
 }
 
 @media (max-width: 768px) {
-	.nav-wrapper #logo {
-		left: 2rem;
-
-		img {
-			width: 80px;
-		}
-	}
 
 	.split-section-wrapper {
 		flex-direction: column;
@@ -292,6 +299,10 @@
 			div {
 				width: 100%;
 				margin: 0 auto;
+			}
+
+			.accent {
+				color: black;
 			}
 		}
 
@@ -324,6 +335,10 @@
 }
 
 @media (max-width: 650px) {
+	.top-section {
+		padding-top: 5rem;
+	}
+
 	.blog-wrapper {
 		flex-direction: column;
 
@@ -334,5 +349,11 @@
 
 	.pink-section-wrapper {
 		padding: 5rem 2rem;
+	}
+
+	.split-section-wrapper .split-section-light {
+		h3 {
+			font-size: 1.5em;
+		}
 	}
 }

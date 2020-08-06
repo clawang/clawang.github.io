@@ -114,10 +114,6 @@ a {
 	}
 }
 
-.logo-hide {
-	transform: translate3d(0, -7rem, 0);
-}
-
 .nav {
 	width: 100%;
 	background: $soft-white;
@@ -175,24 +171,24 @@ a {
 	color: black;
 	text-decoration: none;
 
-	p {
-		margin-bottom: 10px;
-		font-family: 'Proxima Nova';
-		font-weight: 500;
-		font-size: 0.8em;
-	}
+		p {
+			margin-bottom: 10px;
+			font-family: 'Proxima Nova';
+			font-weight: 500;
+			font-size: 0.8em;
+		}
 
-	h3 {
-		margin-top: 0;
-		font-size: 1.7em;
-		transition: 0.2s;
-		font-weight: 300;
-	}
+		h3 {
+			margin-top: 0;
+			font-size: 1.7em;
+			transition: 0.2s;
+			font-weight: 300;
+		}
 
-	&:hover h3 {
-		color: $blush;
+		&:hover h3 {
+			color: $blush;
+		}
 	}
-}
 }
 
 .menu {
@@ -421,7 +417,80 @@ a {
 	}
 }
 
+@media (max-width: 768px) {
+	.nav-wrapper {
+		width: 40%;
+		height: 100%;
+
+		 #logo {
+			left: 2rem;
+
+			img {
+				width: 80px;
+			}
+		}
+	}
+
+	.nav {
+		width: 40%;
+		height: 100%;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+
+	.open-enter {
+		left: 100%;
+	}
+
+	.open-enter-active {
+		left: 60%;
+		transition: .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+	}
+
+	.open-enter-done {
+		left: 60%;
+	}
+
+	.open-exit {
+		left: 60%;
+	}
+
+	.open-exit-active {
+		left: 100%;
+		transition: .3s cubic-bezier(0.25, 0.1, 0.25, 1);
+	}
+
+	.open-exit-done {
+		left: 100%;
+	}
+
+	.nav-container {
+		width: 100%;
+		flex-direction: column;
+
+		a {
+			width: 100%;
+			padding: 0;
+		}
+
+		.nav-item {
+			padding: 0.5em 0;
+		}
+	}
+}
+
 @media (max-width: 650px) {
+	.nav-wrapper {
+		.menu {
+			right: 2rem;
+			top: 2rem;
+		}
+		#logo {
+			left: 1rem;
+		}
+	}
+
 	h2 {
 		font-size: 2em;
 	}

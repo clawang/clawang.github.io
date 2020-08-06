@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Work from './Work';
 import Hobbies from './Hobbies';
+import Resume from './Resume';
 import './App.css';
 import './DefaultStyles.scss';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
@@ -28,6 +29,7 @@ function App({location})  {
 					          	<Route path="/about" component={About} />
 					          	<Route path="/work" component={Work} />
 					          	<Route path="/hobbies" component={Hobbies} />
+					          	<Route path="/resume" component={Resume} />
 					          	<Route path="/" component={Home} />
 					        </Switch>
 				        </CSSTransition>

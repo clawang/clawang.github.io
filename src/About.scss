@@ -82,6 +82,12 @@
 	}
 }
 
+.resume-img {
+	width: 75%;
+	max-width: 800px;
+	margin: 0 auto 1em;
+}
+
 @media (max-width: 768px) {
 	.position-wrapper {
 		flex-direction: column;
@@ -106,5 +112,11 @@
 				padding: 1em 2em;
 			}
 		}
+	}
+}
+
+@media (max-width: 650px) {
+	.resume-img {
+		width: 100%;
 	}
 }
