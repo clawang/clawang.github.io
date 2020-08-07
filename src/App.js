@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import {BrowserRouter as Router, Link, Switch, Route, withRouter, useLocation} from 'react-router-dom';
 import Home from './Home';
 import About from './About';
-import Work from './Work';
+import {Work} from './Work';
+import TOT from './tot';
 import Hobbies from './Hobbies';
 import Resume from './Resume';
 import './App.css';
@@ -28,6 +29,7 @@ function App({location})  {
 				    		<Switch location={location} key={location.pathname}>
 					          	<Route path="/about" component={About} />
 					          	<Route path="/work" component={Work} />
+					          	<Route path="/tot" component={TOT} />
 					          	<Route path="/hobbies" component={Hobbies} />
 					          	<Route path="/resume" component={Resume} />
 					          	<Route path="/" component={Home} />

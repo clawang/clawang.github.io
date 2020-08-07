@@ -29,19 +29,22 @@ class BlogSection extends React.Component {
 					src: wsp,
 					title: 'Virtual NYC',
 					description: 'HTML, CSS Animation, SVG, Adobe Illustrator, Javascript',
-					link: '/dotw-final-project'
+					link: '/dotw-final-project',
+					local: false
 				},
 				{
 					src: shengji,
 					title: 'Real-Time Multiplayer Sheng Ji',
 					description: 'Node, Express, MongoDB, Socket.io, HTML, SASS/CSS, jQuery',
-					link: 'https://murmuring-plateau-52201.herokuapp.com/'
+					link: 'https://murmuring-plateau-52201.herokuapp.com/',
+					local: false
 				},
 				{
 					src: tot,
 					title: 'Twenty Over Ten',
 					description: 'HTML, CSS, jQuery',
-					link: '/tot'
+					link: '/tot',
+					local: true
 				}
 			]
 		}
@@ -54,7 +57,7 @@ class BlogSection extends React.Component {
 					<h1 style={{"text-align": "right"}}>{this.props.title}</h1>
 					<div className="blog-wrapper">
 						{this.state.posts.map(post => (
-							<BlogPost src={post.src} title={post.title} link={post.link} />
+							<BlogPost src={post.src} title={post.title} link={post.link} local={post.local}/>
 						))}
 					</div>
 				</div>
@@ -64,12 +67,15 @@ class BlogSection extends React.Component {
 }
 
 function BlogPost(props) {
+	const content = (
+		<>
+			<img src={props.src} />
+			<p>{props.title}</p>
+		</>
+	);
 	return (
 		<div className="blog-post">
-			<a href={props.link}>
-				<img src={props.src} />
-				<p>{props.title}</p>
-			</a>
+			{props.local ? <Link to={props.link}>{content}</Link> : <a href={props.link}>{content}</a>}
 		</div>
 	);
 }
