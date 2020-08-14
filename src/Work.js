@@ -16,7 +16,7 @@ const projects = [
 		link: "https://murmuring-plateau-52201.herokuapp.com/",
 		linkText: "View Demo",
 		tags: "node.js, express, socket.io, mongoDB, SASS",
-		description: "Developed a real-time multiplayer web game to play Sheng Ji, a classic Chinese card game. It's a tradition in my family to play this game at get togethers, and ever since my parents moved out of the country and my sister and I have gone to college, we haven't had the chance to play. I thought this would be a good temporary solution until we are all together again."
+		description: "Developed a real-time multiplayer web game to play Sheng Ji, a classic Chinese card game. It's a tradition in my family to play this game at get togethers, and ever since my sister and I have gone to college, we haven't had the chance to play. I thought this would be a good temporary solution until we get the chance to be together again."
 	},
 	{
 		title: "Virtual New York City",
@@ -34,7 +34,7 @@ const projects = [
 		link: "/tot",
 		linkText: "See More",
 		tags: "HTML, CSS, jQuery",
-		description: "During my internship at Twenty Over Ten, I designed and developed a number of websites for various financial advisors. Here are just a few examples."
+		description: "During my internship at Twenty Over Ten, I designed a number of websites for various financial advisors, and developed them by customizing Twenty Over Ten's content management system using CSS and jQuery. Here are just a few examples."
 	},
 	{
 		title: "Portfolio Website",

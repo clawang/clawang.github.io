@@ -200,6 +200,19 @@
 		}
 	}
 
+	.tot .gallery-wrapper {
+	 	.gallery-item-wrapper, .gallery-item-wrapper:nth-of-type(even) {
+			flex-direction: column;
+			padding: 0;
+
+			.gallery-item-img, .gallery-item-text {
+				width: 100%;
+				padding: 1em 2em;
+				text-align: center;
+			}
+		}
+	}
+
 	.pop-up img {
 		width: 80%;
 	}

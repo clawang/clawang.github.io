@@ -158,8 +158,8 @@ function Footer(props) {
 	return (
 		<div className="footer">
 			<h1>Contact</h1>
-			<a href="mailto:cyw336@nyu.edu" alt="email" title="Email"><img src={email} /></a>
-			<a href="https://www.linkedin.com/in/clawang/" alt="linkedin" title="LinkedIn"><img src={linkedin} /></a>
+			<a href="mailto:cyw336@nyu.edu" target="_blank" alt="email" title="Email"><img src={email} /></a>
+			<a href="https://www.linkedin.com/in/clawang/" target="_blank" alt="linkedin" title="LinkedIn"><img src={linkedin} /></a>
 		</div>
 	);
 }
