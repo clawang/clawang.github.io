@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c37053b6.chunk.css",
-    "main.js": "/static/js/main.fbde07b5.chunk.js",
-    "main.js.map": "/static/js/main.fbde07b5.chunk.js.map",
+    "main.css": "/static/css/main.c690f757.chunk.css",
+    "main.js": "/static/js/main.c21b153c.chunk.js",
+    "main.js.map": "/static/js/main.c21b153c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
     "static/js/2.81c46e2d.chunk.js": "/static/js/2.81c46e2d.chunk.js",
     "static/js/2.81c46e2d.chunk.js.map": "/static/js/2.81c46e2d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.51171fcf2feba165670d15decf94e53c.js": "/precache-manifest.51171fcf2feba165670d15decf94e53c.js",
+    "precache-manifest.f6a994db68d23701b3e8e7276c43adc5.js": "/precache-manifest.f6a994db68d23701b3e8e7276c43adc5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.c37053b6.chunk.css.map": "/static/css/main.c37053b6.chunk.css.map",
+    "static/css/main.c690f757.chunk.css.map": "/static/css/main.c690f757.chunk.css.map",
     "static/js/2.81c46e2d.chunk.js.LICENSE.txt": "/static/js/2.81c46e2d.chunk.js.LICENSE.txt",
     "static/media/DefaultStyles.scss": "/static/media/ProximaNova-Regular.bf9f5d50.otf",
     "static/media/bluestripes.jpg": "/static/media/bluestripes.40677108.jpg",
     "static/media/claire.png": "/static/media/claire.8c291894.png",
     "static/media/linkedin.svg": "/static/media/linkedin.c54c1027.svg",
-    "static/media/login.png": "/static/media/login.4ac867a2.png",
+    "static/media/login.png": "/static/media/login.37ccc4fa.png",
     "static/media/mail.svg": "/static/media/mail.9d216170.svg",
     "static/media/paris.jpg": "/static/media/paris.55e435a8.jpg",
     "static/media/portfolio.png": "/static/media/portfolio.858f360f.png",
-    "static/media/resume.png": "/static/media/resume.103a0d91.png",
-    "static/media/resume.pdf": "/static/media/resume.df9be2a8.pdf",
+    "static/media/resume.pdf": "/static/media/resume.3f88c507.pdf",
+    "static/media/resume.png": "/static/media/resume.5cfb74f8.png",
     "static/media/tot.png": "/static/media/tot.921c406a.png",
     "static/media/tulum.jpg": "/static/media/tulum.a4bb57ec.jpg",
     "static/media/virtualnyc.png": "/static/media/virtualnyc.36e6d00f.png",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
     "static/js/2.81c46e2d.chunk.js",
-    "static/css/main.c37053b6.chunk.css",
-    "static/js/main.fbde07b5.chunk.js"
+    "static/css/main.c690f757.chunk.css",
+    "static/js/main.c21b153c.chunk.js"
   ]
 }
