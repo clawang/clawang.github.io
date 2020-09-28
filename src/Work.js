@@ -39,9 +39,9 @@ const projects = [
 	{
 		title: "Portfolio Website",
 		src: screen,
-		button: false,
-		link: "/",
-		linkText: "See the CSS drawing",
+		button: true,
+		link: "https://github.com/clawang/clawang.github.io/",
+		linkText: "View Source Code",
 		tags: "react.js, SASS",
 		description: "I developed this website to showcase my professional and personal work using React.js, SASS/CSS. For the homepage, I challenged myself to create a 2D scene entirely out of HTML elements and CSS. Some of the elements are animated, and others (like the Polaroids) are interactive."
 	}
@@ -52,6 +52,8 @@ class GalleryItem extends React.Component {
 		let btn;
 		if(!this.props.button) {
 			btn = "";
+		} else if(this.props.link.charAt(0) === "/") {
+			btn = <p><Link to={this.props.link}><a className="button" style={{"marginLeft": 0}}>{this.props.linkText}</a></Link></p>;
 		} else {
 			btn = <p><a href={this.props.link} target="_blank" className="button" style={{"marginLeft": 0}}>{this.props.linkText}</a></p>;
 		}

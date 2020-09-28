@@ -21,10 +21,16 @@ function Position(props) {
 
 const jobs = [
 	{
+		title: "UI Engineering Intern",
+		company: "FULLBEAUTY Brands",
+		date: "Sep 2020 - Present",
+		description: "Converted existing company e-commerce websites into Progressive Web Applications. Assisted in developing a design system for the UI elements across all of FULLBEAUTY's brands."
+	},
+	{
 		title: "Application Developer Intern",
 		company: "MarketAxess",
-		date: "Jun 2020 - Present",
-		description: "Developed and implemented enhancements using Angular.js and jQuery for internal web applications to manage behavior on MarketAxess’ bond trading platform. Improved internal UI based on user feedback by collaborating with developers and product owners."
+		date: "Jun 2020 - Aug 2020",
+		description: "Interfaced with product managers and other developers in Agile sprints to ensure functional and thoughtful user experiences across our internal applications. Built and integrated download ability for audit history database records in AngularJS and jQuery to help employees manage MarketAxess’ bond trading platform."
 	},
 	{
 		title: "Web Intern",
