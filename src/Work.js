@@ -7,14 +7,24 @@ import wsp from './media/virtualnyc.png';
 import shengji from './media/login.png';
 import screen from './media/portfolio.png';
 import tot from './media/tot.png';
+import wrapped from './media/quarantine-wrapped.png';
 
 const projects = [
+	{
+		title: "Quarantine Wrapped",
+		src: wrapped,
+		button: true,
+		link: "https://quarantine-wrapped.herokuapp.com/",
+		linkText: "View Demo",
+		tags: "React, node.js, Express, SASS, REST API",
+		description: "A Spotify wrapped clone created with the Spotify API to show users a summary of their Spotify listening activity for the past 6 months."
+	},
 	{
 		title: "Real-Time Multiplayer Sheng Ji",
 		src: shengji,
 		button: true,
-		link: "https://murmuring-plateau-52201.herokuapp.com/",
-		linkText: "View Demo",
+		link: "https://github.com/clawang/sheng-ji",
+		linkText: "View Source Code",
 		tags: "node.js, express, socket.io, mongoDB, SASS",
 		description: "Developed a real-time multiplayer web game to play Sheng Ji, a classic Chinese card game. It's a tradition in my family to play this game at get togethers, and ever since my sister and I have gone to college, we haven't had the chance to play. I thought this would be a good temporary solution until we get the chance to be together again."
 	},

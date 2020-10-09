@@ -9,6 +9,7 @@ import screen from './media/portfolio.png';
 import tot from './media/tot.png';
 import email from './media/mail.svg';
 import linkedin from './media/linkedin.svg';
+import wrapped from './media/quarantine-wrapped.png';
 
 class StandardSection extends React.Component {
 	render() {
@@ -26,6 +27,13 @@ class BlogSection extends React.Component {
 		this.state = {
 			posts: [
 				{
+					title: "Quarantine Wrapped",
+					src: wrapped,
+					link: "https://quarantine-wrapped.herokuapp.com/",
+					description: "React, node.js, Express, SASS, REST API",
+					local: false
+				},
+				{
 					src: wsp,
 					title: 'Virtual NYC',
 					description: 'HTML, CSS Animation, SVG, Adobe Illustrator, Javascript',
@@ -36,15 +44,8 @@ class BlogSection extends React.Component {
 					src: shengji,
 					title: 'Real-Time Multiplayer Sheng Ji',
 					description: 'Node, Express, MongoDB, Socket.io, HTML, SASS/CSS, jQuery',
-					link: 'https://murmuring-plateau-52201.herokuapp.com/',
+					link: 'https://github.com/clawang/sheng-ji',
 					local: false
-				},
-				{
-					src: tot,
-					title: 'Twenty Over Ten',
-					description: 'HTML, CSS, jQuery',
-					link: '/tot',
-					local: true
 				}
 			]
 		}
