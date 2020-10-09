@@ -8,6 +8,7 @@ import shengji from './media/login.png';
 import screen from './media/portfolio.png';
 import tot from './media/tot.png';
 import wrapped from './media/quarantine-wrapped.png';
+import haunted from './media/haunted.png';
 
 const projects = [
 	{
@@ -25,7 +26,7 @@ const projects = [
 		button: true,
 		link: "https://github.com/clawang/sheng-ji",
 		linkText: "View Source Code",
-		tags: "node.js, express, socket.io, mongoDB, SASS",
+		tags: "node.js, Express, Socket.io, MongoDB, SASS",
 		description: "Developed a real-time multiplayer web game to play Sheng Ji, a classic Chinese card game. It's a tradition in my family to play this game at get togethers, and ever since my sister and I have gone to college, we haven't had the chance to play. I thought this would be a good temporary solution until we get the chance to be together again."
 	},
 	{
@@ -34,8 +35,17 @@ const projects = [
 		button: true,
 		link: "/dotw-final-project",
 		linkText: "View Demo",
-		tags: "HTML, javascript, CSS animation, adobe illustrator",
+		tags: "HTML, Javascript, CSS Animation, Adobe Illustrator",
 		description: "Illustrated and developed interactive animated web drawings of New York City, as a homage to the city during the thick of the pandemic. I chose locations that meant a lot to me, personally, as I missed the vibrance that they usually held."
+	},
+	{
+		title: "Trick or Treat",
+		src: haunted,
+		button: true,
+		link: "/trick-or-treat",
+		linkText: "View Demo",
+		tags: "HTML, Javascript, p5",
+		description: "Created and developed a halloween-themed game for my interactive computing class using the canvas element and p5. A grave-robbing ghost has to find as many candies as he can while avoiding any tricks along the way."
 	},
 	{
 		title: "Twenty Over Ten Websites",
@@ -52,7 +62,7 @@ const projects = [
 		button: true,
 		link: "https://github.com/clawang/clawang.github.io/",
 		linkText: "View Source Code",
-		tags: "react.js, SASS",
+		tags: "React, SASS",
 		description: "I developed this website to showcase my professional and personal work using React.js, SASS/CSS. For the homepage, I challenged myself to create a 2D scene entirely out of HTML elements and CSS. Some of the elements are animated, and others (like the Polaroids) are interactive."
 	}
 ];
