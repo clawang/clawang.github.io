@@ -33,7 +33,7 @@ const projects = [
 		title: "Virtual New York City",
 		src: wsp,
 		button: true,
-		link: "/dotw-final-project",
+		link: "https://clawang.github.io/dotw-final-project",
 		linkText: "View Demo",
 		tags: "HTML, Javascript, CSS Animation, Adobe Illustrator",
 		description: "Illustrated and developed interactive animated web drawings of New York City, as a homage to the city during the thick of the pandemic. I chose locations that meant a lot to me, personally, as I missed the vibrance that they usually held."
@@ -42,7 +42,7 @@ const projects = [
 		title: "Trick or Treat",
 		src: haunted,
 		button: true,
-		link: "/trick-or-treat",
+		link: "https://clawang.github.io/trick-or-treat",
 		linkText: "View Demo",
 		tags: "HTML, Javascript, p5",
 		description: "Created and developed a halloween-themed game for my interactive computing class using the canvas element and p5. A grave-robbing ghost has to find as many candies as he can while avoiding any tricks along the way."
