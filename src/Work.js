@@ -24,9 +24,9 @@ const projects = [
 		title: "Real-Time Multiplayer Sheng Ji",
 		src: shengji,
 		button: true,
-		link: "https://github.com/clawang/sheng-ji",
+		link: "https://multiplayer-sheng-ji.herokuapp.com/",
 		linkText: "View Source Code",
-		tags: "node.js, Express, Socket.io, MongoDB, SASS",
+		tags: "React, node.js, Express, Socket.io, SASS",
 		description: "Developed a real-time multiplayer web game to play Sheng Ji, a classic Chinese card game. It's a tradition in my family to play this game at get togethers, and ever since my sister and I have gone to college, we haven't had the chance to play. I thought this would be a good temporary solution until we get the chance to be together again."
 	},
 	{
