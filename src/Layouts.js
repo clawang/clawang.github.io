@@ -44,7 +44,7 @@ class BlogSection extends React.Component {
 					src: shengji,
 					title: 'Real-Time Multiplayer Sheng Ji',
 					description: 'Node, Express, MongoDB, Socket.io, HTML, SASS/CSS, jQuery',
-					link: 'https://github.com/clawang/sheng-ji',
+					link: 'https://multiplayer-sheng-ji.herokuapp.com/',
 					local: false
 				}
 			]
