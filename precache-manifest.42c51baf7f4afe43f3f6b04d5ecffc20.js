@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25cdeeb14794df82fee355120aa04229",
+    "revision": "837c03eb99e23e76b69ece023da605e1",
     "url": "/index.html"
   },
   {
-    "revision": "94bd2d54ddbae64a1c30",
+    "revision": "624633ccf6dbca0bae94",
     "url": "/static/css/main.c690f757.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.aace92d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "94bd2d54ddbae64a1c30",
-    "url": "/static/js/main.88bdc8e8.chunk.js"
+    "revision": "624633ccf6dbca0bae94",
+    "url": "/static/js/main.9d6210df.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/claire.8c291894.png"
   },
   {
-    "revision": "14c89877a5650551ba0c736510e1fcfc",
-    "url": "/static/media/haunted.14c89877.png"
+    "revision": "49ac4e77c459754ef05c8756efeb5707",
+    "url": "/static/media/covid.49ac4e77.png"
   },
   {
     "revision": "c54c1027d09bc3a333df8254c677543a",
