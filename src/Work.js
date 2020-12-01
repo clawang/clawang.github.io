@@ -8,7 +8,7 @@ import shengji from './media/login.png';
 import screen from './media/portfolio.png';
 import tot from './media/tot.png';
 import wrapped from './media/quarantine-wrapped.png';
-import haunted from './media/haunted.png';
+import covid from './media/covid.png';
 
 const projects = [
 	{
@@ -39,13 +39,13 @@ const projects = [
 		description: "Illustrated and developed interactive animated web drawings of New York City, as a homage to the city during the thick of the pandemic. I chose locations that meant a lot to me, personally, as I missed the vibrance that they usually held."
 	},
 	{
-		title: "Trick or Treat",
-		src: haunted,
+		title: "CovidStory",
+		src: covid,
 		button: true,
-		link: "https://clawang.github.io/trick-or-treat",
+		link: "https://clawang.github.io/ic-midterm-project",
 		linkText: "View Demo",
 		tags: "HTML, Javascript, p5",
-		description: "Created and developed a halloween-themed game for my interactive computing class using the canvas element and p5. A grave-robbing ghost has to find as many candies as he can while avoiding any tricks along the way."
+		description: "Developed a game where you fight Covid particles throughout different countries in multiple levels. You get stronger as you go, but so does the covid. Once you earn enough points, you can purchase upgrades at the shop to help you in your fight. Based off Maple Story."
 	},
 	{
 		title: "Twenty Over Ten Websites",
