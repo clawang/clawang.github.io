@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "837c03eb99e23e76b69ece023da605e1",
+    "revision": "62a337aaa582c62d53a2c779e02cb03b",
     "url": "/index.html"
   },
   {
-    "revision": "624633ccf6dbca0bae94",
-    "url": "/static/css/main.c690f757.chunk.css"
+    "revision": "8c9846ac3b1fedffa2f2",
+    "url": "/static/css/main.9d462efa.chunk.css"
   },
   {
-    "revision": "5a62c7d6254435adac68",
-    "url": "/static/js/2.aace92d2.chunk.js"
+    "revision": "45c0800af68674ebb3e5",
+    "url": "/static/js/2.06c5335f.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.aace92d2.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.06c5335f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "624633ccf6dbca0bae94",
-    "url": "/static/js/main.9d6210df.chunk.js"
+    "revision": "8c9846ac3b1fedffa2f2",
+    "url": "/static/js/main.4b47febf.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "40677108180707590c57467f014f697a",
     "url": "/static/media/bluestripes.40677108.jpg"
+  },
+  {
+    "revision": "083e26e521d3450366ee08aa8c434658",
+    "url": "/static/media/book.083e26e5.jpg"
   },
   {
     "revision": "8c291894e45aefedbddba1fdd6840936",
@@ -54,6 +58,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9d2161705e27c3adfa0b674bc138b211",
     "url": "/static/media/mail.9d216170.svg"
+  },
+  {
+    "revision": "1fe04f843a7f8bbf79528cde33fa4010",
+    "url": "/static/media/nomadicmatt.1fe04f84.jpg"
+  },
+  {
+    "revision": "9ccf3ecf21f5ede1de8bb5cfd038f78c",
+    "url": "/static/media/nyt.9ccf3ecf.JPG"
   },
   {
     "revision": "55e435a871b1748f66541069e822c089",
