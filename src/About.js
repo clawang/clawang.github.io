@@ -23,14 +23,14 @@ const jobs = [
 	{
 		title: "UI Engineering Intern",
 		company: "FULLBEAUTY Brands",
-		date: "Sep 2020 - Present",
-		description: "Converted existing company e-commerce websites into Progressive Web Applications. Assisted in developing a design system for the UI elements across all of FULLBEAUTY's brands."
+		date: "Sep 2020 - Nov 2020",
+		description: "Developed UI components for FULLBEAUTY’s design system using HTML and Sass by collaborating with product designers. Created proof of concept to demonstrate how to convert company e-commerce websites into Progressive Web Apps (PWAs) and presented it to leadership."
 	},
 	{
 		title: "Application Developer Intern",
 		company: "MarketAxess",
 		date: "Jun 2020 - Aug 2020",
-		description: "Interfaced with product managers and other developers in Agile sprints to ensure functional and thoughtful user experiences across our internal applications. Built and integrated download ability for audit history database records in AngularJS and jQuery to help employees manage MarketAxess’ bond trading platform."
+		description: "Enhanced user experiences across our internal applications by interfacing with product managers in Agile sprints to improve UI. Built and integrated download ability for audit history database records in Javascript and jQuery to help employees manage MarketAxess’ bond trading platform. Collaborated with other interns to present enhancements to senior leaders and the global management team."
 	},
 	{
 		title: "Web Intern",

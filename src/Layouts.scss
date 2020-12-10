@@ -331,6 +331,14 @@
 	}
 }
 
+.photo-divider {
+	height: 40vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
 @media (max-width: 1024px) {
 	.blog-wrapper {
 		padding: 0;

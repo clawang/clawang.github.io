@@ -195,6 +195,15 @@ class TileGallery extends React.Component {
 	}
 }
 
+class PhotoDivider extends React.Component {
+	render() {
+		return (
+			<div className="photo-divider" style={{backgroundImage: "url(" + process.env.PUBLIC_URL + this.props.img + ")"}}>
+			</div>
+		);
+	}
+}
+
 function Footer(props) {
 	return (
 		<div className="footer">
@@ -205,5 +214,5 @@ function Footer(props) {
 	);
 }
 
-export {StandardSection, SplitSection, BlogSection, CollageSection, HeaderSection, PhotoHeaderSection, PhotoTitleSection, TileGallery, Footer};
+export {StandardSection, SplitSection, BlogSection, CollageSection, HeaderSection, PhotoHeaderSection, PhotoTitleSection, PhotoDivider, TileGallery, Footer};
 
