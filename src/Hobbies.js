@@ -44,6 +44,11 @@ class Work extends React.Component {
 						<p><a href="https://instagram.com/fooodiesadventures/" target="_blank" className="button">See my photography</a></p>
 					</div>
 				</StandardSection>
+				<div className="gallery-full-wrapper">
+					<div className="gallery-full">
+						<TileGallery images={travelPics} />
+					</div>
+				</div>
 				<Footer />
 			</div>
 		);

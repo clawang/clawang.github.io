@@ -312,6 +312,19 @@
 	 }
 }
 
+.gallery-full-wrapper {
+	width: 100%;
+	background: $pale-nude;
+	margin-top: -3rem;
+	padding-bottom: 5rem;
+}
+
+.gallery-full {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .gallery {
 	width: 100%;
 	display: flex;
@@ -452,5 +465,33 @@
 		.bg {
 			display: none;
 		}
+	}
+
+	.section {
+		padding: 2em;
+	}
+
+	.photo-title-section-wrapper {
+		padding: 0 1em;
+
+		div {
+			width: 50%;
+		}
+
+		h1 {
+			padding: 0.5em;
+		}
+
+		#placeholder {
+			display: none;
+		}
+
+		.bg {
+			display: none;
+		}
+	}
+
+	.gallery {
+		flex-direction: column;
 	}
 }
