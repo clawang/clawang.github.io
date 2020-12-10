@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import cx from 'classnames';
 import {CSSTransition} from 'react-transition-group';
 import styles from './Layouts.scss';
@@ -184,15 +184,43 @@ class TileGallery extends React.Component {
 			<div className="gallery">
 				{this.props.images.map(img => {
 					return (
-						<div className="gallery-item">
-							<img src={img.src} />
-							<p className="gallery-caption">{img.caption}</p>
-						</div>
+						<TileGalleryItem src={img.src} caption={img.caption} />
 					);
 				})}
 			</div>
 		);
 	}
+}
+
+function TileGalleryItem(props) {
+
+	const container = useRef(null);
+	const image = useRef(null);
+	const [topOffset, setTop] = useState(0);
+
+	useEffect(() => {
+		resize();
+	}, []);
+
+	window.addEventListener('resize', function(event) {
+    	resize();
+	});
+
+	const resize = () => {
+		if(image.current) {
+			let w = image.current.clientWidth;
+			setTop(w);
+		}
+	}
+
+	return (
+		<div className="gallery-item">
+			<div className="gallery-item-photo" ref={container}>
+				<img src={process.env.PUBLIC_URL + props.src} style={{height: topOffset}} ref={image}/>
+			</div>
+			<p className="gallery-caption">{props.caption}</p>
+		</div>
+	);
 }
 
 class PhotoDivider extends React.Component {
