@@ -15,7 +15,13 @@ class StandardSection extends React.Component {
 	render() {
 		return (
 			<div className={"section-wrapper " + this.props.color} style={this.props.styles}>
-				{this.props.children}
+			{this.props.text ? 
+				<div className="text-wrapper">
+					{this.props.children}
+				</div>
+				 : 
+				this.props.children
+			}
 			</div>
 		);
 	}
@@ -69,10 +75,10 @@ class BlogSection extends React.Component {
 
 function BlogPost(props) {
 	const content = (
-		<>
+		<div>
 			<img src={props.src} />
 			<p>{props.title}</p>
-		</>
+		</div>
 	);
 	return (
 		<div className="blog-post">
@@ -155,6 +161,40 @@ class PhotoHeaderSection extends React.Component {
 	}
 }
 
+class PhotoTitleSection extends React.Component {
+	render() {
+		return (
+			<div className="section-wrapper top-section" style={{paddingBottom: '1rem'}}>
+				<div className="photo-title-section-wrapper">
+					<div>
+						<img src={this.props.img} />
+						<div className="bg"></div>
+						<img src={this.props.img} id="placeholder" />
+					</div>
+					{this.props.children}
+				</div>
+			</div>
+		);
+	}
+}
+
+class TileGallery extends React.Component {
+	render() {
+		return (
+			<div className="gallery">
+				{this.props.images.map(img => {
+					return (
+						<div className="gallery-item">
+							<img src={img.src} />
+							<p className="gallery-caption">{img.caption}</p>
+						</div>
+					);
+				})}
+			</div>
+		);
+	}
+}
+
 function Footer(props) {
 	return (
 		<div className="footer">
@@ -165,5 +205,5 @@ function Footer(props) {
 	);
 }
 
-export {StandardSection, SplitSection, BlogSection, CollageSection, HeaderSection, PhotoHeaderSection, Footer};
+export {StandardSection, SplitSection, BlogSection, CollageSection, HeaderSection, PhotoHeaderSection, PhotoTitleSection, TileGallery, Footer};
 

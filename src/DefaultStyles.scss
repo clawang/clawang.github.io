@@ -55,7 +55,8 @@ p {
 }
 
 a {
-	color: black;
+	color: $terracotta;
+	text-decoration: none;
 }
 
 @mixin custom-button {
