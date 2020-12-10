@@ -1,27 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.0cfa2ea9.chunk.css",
-    "main.js": "/static/js/main.bfa4509b.chunk.js",
-    "main.js.map": "/static/js/main.bfa4509b.chunk.js.map",
+    "main.css": "/static/css/main.eb3a892f.chunk.css",
+    "main.js": "/static/js/main.75e9f7cc.chunk.js",
+    "main.js.map": "/static/js/main.75e9f7cc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
-    "static/js/2.65cbf6c6.chunk.js": "/static/js/2.65cbf6c6.chunk.js",
-    "static/js/2.65cbf6c6.chunk.js.map": "/static/js/2.65cbf6c6.chunk.js.map",
+    "static/js/2.0833ef4d.chunk.js": "/static/js/2.0833ef4d.chunk.js",
+    "static/js/2.0833ef4d.chunk.js.map": "/static/js/2.0833ef4d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.033eab0d8d81f96987568dd9c600c43d.js": "/precache-manifest.033eab0d8d81f96987568dd9c600c43d.js",
+    "precache-manifest.7bf5b92b84405244bdf832fcf7747ee9.js": "/precache-manifest.7bf5b92b84405244bdf832fcf7747ee9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0cfa2ea9.chunk.css.map": "/static/css/main.0cfa2ea9.chunk.css.map",
-    "static/js/2.65cbf6c6.chunk.js.LICENSE.txt": "/static/js/2.65cbf6c6.chunk.js.LICENSE.txt",
+    "static/css/main.eb3a892f.chunk.css.map": "/static/css/main.eb3a892f.chunk.css.map",
+    "static/js/2.0833ef4d.chunk.js.LICENSE.txt": "/static/js/2.0833ef4d.chunk.js.LICENSE.txt",
     "static/media/DefaultStyles.scss": "/static/media/ProximaNova-Regular.bf9f5d50.otf",
     "static/media/bluestripes.jpg": "/static/media/bluestripes.40677108.jpg",
-    "static/media/book.jpg": "/static/media/book.083e26e5.jpg",
     "static/media/claire.png": "/static/media/claire.8c291894.png",
     "static/media/covid.png": "/static/media/covid.49ac4e77.png",
     "static/media/linkedin.svg": "/static/media/linkedin.c54c1027.svg",
     "static/media/login.png": "/static/media/login.37ccc4fa.png",
     "static/media/mail.svg": "/static/media/mail.9d216170.svg",
-    "static/media/nomadicmatt.jpg": "/static/media/nomadicmatt.1fe04f84.jpg",
-    "static/media/nyt.JPG": "/static/media/nyt.9ccf3ecf.JPG",
     "static/media/paris.jpg": "/static/media/paris.55e435a8.jpg",
     "static/media/portfolio.png": "/static/media/portfolio.858f360f.png",
     "static/media/quarantine-wrapped.png": "/static/media/quarantine-wrapped.bc853796.png",
@@ -34,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
-    "static/js/2.65cbf6c6.chunk.js",
-    "static/css/main.0cfa2ea9.chunk.css",
-    "static/js/main.bfa4509b.chunk.js"
+    "static/js/2.0833ef4d.chunk.js",
+    "static/css/main.eb3a892f.chunk.css",
+    "static/js/main.75e9f7cc.chunk.js"
   ]
 }
