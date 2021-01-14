@@ -39,9 +39,12 @@ class Home extends React.Component {
 						<h1>Skills</h1>
 						<div className="skills-wrapper">
 							<SkillButton name="javascript"/>
-							<SkillButton name="html/css"/>
+							<SkillButton name="html"/>
+							<SkillButton name="CSS/SASS"/>
 							<SkillButton name="react"/>
 							<SkillButton name="java"/>
+							<SkillButton name="python"/>
+							<SkillButton name="SQL"/>
 							<SkillButton name="mongoDB"/>
 						</div>
 					</div>
@@ -49,7 +52,7 @@ class Home extends React.Component {
 				<BlogSection title="Recent Work" />
 				<SplitSection img={paris}>
 					<div>
-						<h3>I'm Claire, a rising Senior at NYU studying Computer Science, Web Development, and the Business of Entertainment, Media, and Technology. <span className="accent">I hope to work with design-focused companies to create seamless and intuitive user experiences.</span></h3>
+						<h3>I'm Claire, a rising Senior at NYU studying Computer Science, Web Development, and the Business of Entertainment, Media, and Technology. <span className="accent">I hope to work with design-focused companies to create attractive, functional, and intuitive user experiences.</span></h3>
 						<p className="read-more-link"><Link to="/about">Read More</Link> ⟶</p>
 					</div>
 				</SplitSection>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import './About.scss';
-import {StandardSection, PhotoHeaderSection, Footer} from './Layouts';
+import {StandardSection, PhotoHeaderSection, BlogSection, Footer} from './Layouts';
 import paris from './media/paris.jpg';
 
 function Position(props) {
@@ -51,11 +51,16 @@ class About extends React.Component {
 		return (
 			<div className="about-page page">
 				<PhotoHeaderSection img={paris}>
-					<div>
-						<h1>Hi, I'm Claire.</h1>
-						<p>I'm a developer, designer, photographer, blogger, and all around creative type. I'm currently studying Computer Science at NYU and minoring in Web Programming & Applications and Business of Entertainment, Media, and Technology.</p>
-						<p>Although I have many varied interests, I think all of them stem from my desire to better facilitate communication; to help brands reach their customers and to help people reach their peers. Because real, authentic connections are what shape our technologies, our brands, and our everyday lives.</p>
-						<p>In my free time, I run a travel blog, dabble in photography, and spend all my money on brunch.</p>
+					<div className="photo-header-section-text">
+						<h2>Developer, designer, photographer, –& avid foodie.</h2>
+						<p>Hi there! I'm Claire, and currently, I'm a senior at NYU studying:</p>
+						<ul>
+							<li>Computer Science</li>
+							<li>Web Programming & Applications</li>
+							<li>Business of Entertainment, Media, and Technology</li>
+						</ul>
+						<p>Although I have many varied interests, what I am passionate about is helping companies develop attractive, functional, and intuitive user experiences, and I believe that having a holistic view of the software I engineer will result in better end products.</p>
+						<p>Interested in learning more? Please feel free to contact me at <a href="mailto:cyw336@nyu.edu">cyw336@nyu.edu</a>. Looking forward to hearing from you!</p>
 					</div>
 				</PhotoHeaderSection>
 				<StandardSection color="white" styles={{"padding-top": "4rem"}}>
@@ -67,6 +72,7 @@ class About extends React.Component {
 						<p><Link to="/resume" className="button">Resume</Link></p>
 					</div>
 				</StandardSection>
+				<BlogSection title="Recent Work" />
 				<Footer />
 			</div>
 		);

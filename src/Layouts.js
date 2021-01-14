@@ -66,7 +66,13 @@ class BlogSection extends React.Component {
 						{this.state.posts.map(post => (
 							<BlogPost src={post.src} title={post.title} link={post.link} local={post.local}/>
 						))}
+						<div className="blog-link">
+							<Link to="/work">
+								<h4>See More ⟶</h4>
+							</Link>
+						</div>
 					</div>
+
 				</div>
 			</div>
 		);
@@ -150,7 +156,7 @@ class PhotoHeaderSection extends React.Component {
 			<div className="section-wrapper top-section">
 				<div className="photo-header-section-wrapper">
 					{this.props.children}
-					<div>
+					<div className="photo-header-section-photo">
 						<img src={this.props.img} />
 						<div className="bg"></div>
 						<img src={this.props.img} id="placeholder" />

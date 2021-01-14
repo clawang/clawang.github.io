@@ -32,6 +32,15 @@ body {
 	flex-wrap: wrap;
 }
 
+.section h1 {
+	margin-bottom: 0.4em;
+}
+
+.skills-wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .project-item {
 	background: white;
 	width: 40%;

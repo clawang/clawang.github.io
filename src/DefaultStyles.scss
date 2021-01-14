@@ -59,6 +59,13 @@ a {
 	text-decoration: none;
 }
 
+li {
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: calc(.2vw +  0.9rem);
+	line-height: 1.3em;
+	letter-spacing: 0.2px;
+}
+
 @mixin custom-button {
 	padding: 0.8em 2em;
 	display: inline-block;
