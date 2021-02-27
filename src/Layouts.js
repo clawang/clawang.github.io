@@ -8,6 +8,7 @@ import shengji from './media/login.png';
 import screen from './media/portfolio.png';
 import tot from './media/tot.png';
 import email from './media/mail.svg';
+import gh from './media/github.png';
 import linkedin from './media/linkedin.svg';
 import wrapped from './media/quarantine-wrapped.png';
 
@@ -243,6 +244,7 @@ function Footer(props) {
 		<div className="footer">
 			<h1>Contact</h1>
 			<a href="mailto:cyw336@nyu.edu" target="_blank" alt="email" title="Email"><img src={email} /></a>
+			<a href="https://github.com/clawang" target="_blank" alt="github" title="Github"><img src={gh} /></a>
 			<a href="https://www.linkedin.com/in/clawang/" target="_blank" alt="linkedin" title="LinkedIn"><img src={linkedin} /></a>
 		</div>
 	);
