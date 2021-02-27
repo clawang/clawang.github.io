@@ -52,7 +52,9 @@ class Home extends React.Component {
 				<BlogSection title="Recent Work" />
 				<SplitSection img={paris}>
 					<div>
-						<h3>I'm Claire, a rising Senior at NYU studying Computer Science, Web Development, and the Business of Entertainment, Media, and Technology. <span className="accent">I hope to work with design-focused companies to create attractive, functional, and intuitive user experiences.</span></h3>
+						<h3>Hey there, I'm Claire, I'm passionate about helping companies develop attractive, functional, and intuitive user experiences. </h3>
+						<p>I'm currently a senior at NYU currently studying Computer Science, Web Programming & Applications, and the Business of Entertainment, Media, and Technology. </p>
+						<p>Just a few of my many varied interests include: software development, UX design, and photography, </p>
 						<p className="read-more-link"><Link to="/about">Read More</Link> ⟶</p>
 					</div>
 				</SplitSection>

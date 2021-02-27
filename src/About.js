@@ -13,7 +13,9 @@ function Position(props) {
 				<p>{props.date}</p>
 			</div>
 			<div className="position-description">
-				<p>{props.description}</p>
+				<ul>
+					{props.description.map(d => <li>{d}</li>)}
+				</ul>
 			</div>
 		</div>
 	);
@@ -21,28 +23,34 @@ function Position(props) {
 
 const jobs = [
 	{
+		title: "Engineering Ambassdaor",
+		company: "Contra",
+		date: "March 2021",
+		description: ["Beta tested new features on the remote work platform and provided UX/UI feedback to improve user experience.","Created articles and content to inform other users about how to get the most value platform."]
+	},
+	{
 		title: "UI Engineering Intern",
 		company: "FULLBEAUTY Brands",
 		date: "Sep 2020 - Nov 2020",
-		description: "Developed UI components for FULLBEAUTY’s design system using HTML and Sass by collaborating with product designers. Created proof of concept to demonstrate how to convert company e-commerce websites into Progressive Web Apps (PWAs) and presented it to leadership."
+		description: ["Developed UI components for FULLBEAUTY’s design system using HTML and Sass by collaborating with product designers.","Created proof of concept to demonstrate how to convert company e-commerce websites into Progressive Web Apps (PWAs) and presented it to leadership."]
 	},
 	{
 		title: "Application Developer Intern",
 		company: "MarketAxess",
 		date: "Jun 2020 - Aug 2020",
-		description: "Enhanced user experiences across our internal applications by interfacing with product managers in Agile sprints to improve UI. Built and integrated download ability for audit history database records in Javascript and jQuery to help employees manage MarketAxess’ bond trading platform. Collaborated with other interns to present enhancements to senior leaders and the global management team."
+		description: ["Enhanced user experiences across our internal applications by interfacing with product managers in Agile sprints to improve UI.","Built and integrated download ability for audit history database records in Javascript and jQuery to help employees manage MarketAxess’ bond trading platform.","Collaborated with other interns to present enhancements to senior leaders and the global management team."]
 	},
 	{
 		title: "Web Intern",
 		company: "Twenty Over Ten",
 		date: "Jan 2020 - Jun 2020",
-		description: "Designed websites alongside 4 lead designers for financial advisors to increase conversions. Developed front end using HTML, CSS, JavaScript, and our in-house content management system."
+		description: ["Designed websites alongside 4 lead designers for financial advisors to increase conversions.","Developed front end using HTML, CSS, JavaScript, and our in-house content management system."]
 	},
 	{
 		title: "Course Grader",
 		company: "NYU Courant Institute",
 		date: "Sep 2019 - Dec 2019",
-		description: "Responsible for turning over 50+ grades for Web Development and Programming assignments weekly on a strict deadline. Provided feedback and training on debugging code, connecting to servers, improving HTML/CSS/Javascript."
+		description: ["Responsible for turning over 50+ grades for Web Development and Programming assignments weekly on a strict deadline.","Provided feedback and training on debugging code, connecting to servers, improving HTML/CSS/Javascript."]
 	}
 ];
 
@@ -60,12 +68,13 @@ class About extends React.Component {
 							<li>Business of Entertainment, Media, and Technology</li>
 						</ul>
 						<p>Although I have many varied interests, what I am passionate about is helping companies develop attractive, functional, and intuitive user experiences, and I believe that having a holistic view of the software I engineer will result in better end products.</p>
+						<p>When I'm not doing that, I'm usually curating new playlists on Spotify, attempting to visit every cafe in the city, or obsessing over interior design.</p>
 						<p>Interested in learning more? Please feel free to contact me at <a href="mailto:cyw336@nyu.edu">cyw336@nyu.edu</a>. Looking forward to hearing from you!</p>
 					</div>
 				</PhotoHeaderSection>
 				<StandardSection color="white" styles={{"padding-top": "4rem"}}>
 					<div className="section">
-						<h2>Work Experience</h2>
+						<h2>Experience</h2>
 						{jobs.map(position => (
 							<Position title={position.title} company={position.company} date={position.date} description={position.description} />
 						))}
