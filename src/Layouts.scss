@@ -72,6 +72,17 @@
 		top: -15vw;
 		border-radius: 50%;
 	}
+
+	&.orange {
+		background: $blush;
+		h1 {color: white;}
+		&:before {background: $terracotta;}
+	}
+
+	&.lightpink {
+		//background: $pink;
+		&:before {background: $pink;}
+	}
 }
 
 .blog-wrapper {

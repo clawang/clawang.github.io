@@ -42,9 +42,7 @@ class Work extends React.Component {
 	render() {
 		return (
 			<div className="page">
-				<PhotoTitleSection img={tulum}>
-					<h1>Hobbies</h1>
-				</PhotoTitleSection>
+				<HeaderSection title="Hobbies" color="lightpink" />
 				<StandardSection color="white" text={true}>
 					<div className="section">
 						<h3>Travel Blog – Adventure at Work</h3>

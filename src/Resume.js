@@ -8,7 +8,7 @@ class Resume extends React.Component {
 	render() {
 		return (
 			<div className="page">
-				<HeaderSection title="Resume" />
+				<HeaderSection title="Resume" color="orange" />
 				<StandardSection color="white">
 					<div className="section">
 						<img src={resume} className="resume-img" />
