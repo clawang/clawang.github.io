@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import './About.scss';
 import {StandardSection, PhotoHeaderSection, BlogSection, Footer} from './Layouts';
-import paris from './media/paris.jpg';
+import paris from './media/laylow.jpg';
 
 function Position(props) {
 	return (
@@ -68,7 +68,7 @@ class About extends React.Component {
 							<li>Business of Entertainment, Media, and Technology</li>
 						</ul>
 						<p>Although I have many varied interests, what I am passionate about is helping companies develop attractive, functional, and intuitive user experiences, and I believe that having a holistic view of the software I engineer will result in better end products.</p>
-						<p>When I'm not doing that, I'm usually curating new playlists on Spotify, attempting to visit every cafe in the city, or obsessing over interior design.</p>
+						<p>When I'm not doing that, I'm usually curating new playlists on Spotify, attempting to visit every restaurant in the city, or travelling.</p>
 						<p>Interested in learning more? Please feel free to contact me at <a href="mailto:cyw336@nyu.edu">cyw336@nyu.edu</a>. Looking forward to hearing from you!</p>
 					</div>
 				</PhotoHeaderSection>

@@ -13,33 +13,51 @@ import logo from './media/claire.png';
 
 function App({location})  {
 	const [currentPath, setCurrentPath] = useState(location.pathname);
+	const [currentPage, setPage] = useState(1);
+	const [navOpen, setNav] = useState(false);
+	const [hoverPage, setHover] = useState(0);
 
-	  useEffect(() => {
-	    const { pathname } = location;
-	    setCurrentPath(pathname);
-	  }, [location.pathname]);
+	useEffect(() => {
+		// const { pathname } = location;
+		// setCurrentPath(pathname);
+	}, [location.pathname]);
 
-	  return (
-	    <div className="App">
-			<NavBar />
-			<Route render={({location}) => {
-				return (
-		    		<TransitionGroup>
-			    		<CSSTransition key={location.pathname} timeout={1000} classNames="switch">
-				    		<Switch location={location} key={location.pathname}>
-					          	<Route path="/about" component={About} />
-					          	<Route path="/work" component={Work} />
-					          	<Route path="/tot" component={TOT} />
-					          	<Route path="/hobbies" component={Hobbies} />
-					          	<Route path="/resume" component={Resume} />
-					          	<Route path="/" component={Home} />
-					        </Switch>
-				        </CSSTransition>
-			        </TransitionGroup>
-			    );
-	        }} />
-	    </div>
-	  );
+	const switchPage = (page) => {
+		setPage(page);
+	};
+
+	const showHover = (num) => {
+		setHover(num);
+		console.log(num);
+	};
+
+	return (
+	<div className="App">
+		<NavBar router={switchPage} navOpen={setNav} hoverPage={showHover} />
+		<div className={"container " + (navOpen ? "minimized" : "")}>
+			<div className="freeze-overlay">
+				{hoverPage > 0 ? <Page index={hoverPage} /> : ""}
+			</div>
+			<Page index={currentPage} />
+		</div>
+	</div>
+	);
+}
+
+function Page(props) {
+	if(props.index === 1) {
+		return <Home />;
+	} else if(props.index === 2) {
+		return <About />;
+	} else if(props.index === 3) {
+		return <Work />;
+	} else if(props.index === 4) {
+		return <TOT />;
+	} else if(props.index === 5) {
+		return <Hobbies />;
+	} else if(props.index === 6) {
+		return <Resume />;
+	} 
 }
 
 class NavBar extends React.Component {
@@ -68,16 +86,20 @@ class NavBar extends React.Component {
 		}
 	}
 
-	handleClick(e) {
+	handleClick(page) {
 		const currentState = this.state.open;
 		this.setState({open: !currentState});
+		this.props.navOpen(!currentState);
 		if(currentState) {
 			document.querySelector('.nav').classList.remove('hover');
+			console.log(page);
+			if(page) this.props.router(page);
 		}
 	}
 
 	logoClick() {
 		const currentState = this.state.open;
+		this.props.router(1);
 		if(currentState) {
 			this.setState({open: false});
 			document.querySelector('.nav').classList.remove('hover');
@@ -91,7 +113,7 @@ class NavBar extends React.Component {
 					<Link to="/"><img src={logo} onClick={this.logoClick} /></Link>
 				</div>
 				<CSSTransition in={this.state.open} timeout={250} classNames="cross">
-					<div className="menu" onMouseEnter={this.handleHover} onMouseLeave={this.removeHover} onClick={this.handleClick}>
+					<div className="menu" onMouseEnter={this.handleHover} onMouseLeave={this.removeHover} onClick={() => this.handleClick(0)}>
 						<span></span>
 						<span></span>
 						<span></span>
@@ -101,10 +123,10 @@ class NavBar extends React.Component {
 				<CSSTransition in={this.state.open} timeout={350} classNames="open">
 					<div className="nav" key="nav">
 						<div className="nav-container">
-							<NavItem number="01." name="About" link="/about" onClick={this.handleClick} />
-							<NavItem number="02." name="Work" link="/work" onClick={this.handleClick} />
-							<NavItem number="03." name="Hobbies" link="/hobbies" onClick={this.handleClick} />
-							<NavItem number="04." name="Resume" link="/resume" onClick={this.handleClick} />
+							<NavItem number="01." name="About" onClick={() => this.handleClick(2)} handleHover={() => this.props.hoverPage(2)} />
+							<NavItem number="02." name="Work" onClick={() => this.handleClick(3)} handleHover={() => this.props.hoverPage(3)} />
+							<NavItem number="03." name="Hobbies" onClick={() => this.handleClick(5)} handleHover={() => this.props.hoverPage(5)} />
+							<NavItem number="04." name="Resume" onClick={() => this.handleClick(6)} handleHover={() => this.props.hoverPage(6)} />
 						</div>
 					</div>
 				</CSSTransition>
@@ -114,10 +136,11 @@ class NavBar extends React.Component {
 }
 
 class NavItem extends React.Component {
+
 	render() {
 		return (
     		<Link to={this.props.link}>
-				<div className="nav-item" onClick={this.props.onClick}>
+				<div className="nav-item" onClick={this.props.onClick} onHover={this.props.handleHover}>
 					<p>{this.props.number}</p>
 					<h3>{this.props.name}</h3>
 				</div>
