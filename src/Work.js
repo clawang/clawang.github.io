@@ -9,6 +9,7 @@ import screen from './media/portfolio.png';
 import tot from './media/tot.png';
 import wrapped from './media/quarantine-wrapped.png';
 import covid from './media/covid.png';
+import bv from './media/bv.png';
 
 const projects = [
 	{
@@ -37,6 +38,15 @@ const projects = [
 		linkText: "View Demo",
 		tags: "HTML, Javascript, CSS Animation, Adobe Illustrator",
 		description: "Illustrated and developed interactive animated web drawings of New York City, as a homage to the city during the thick of the pandemic. I chose locations that meant a lot to me, personally, as I missed the vibrance that they usually held."
+	},
+	{
+		title: "Bon Viveur",
+		src: bv,
+		button: true,
+		link: "https://clawang.github.io/bon-viveur",
+		linkText: "View Demo",
+		tags: "React, Google Maps API",
+		description: "Developed a website to display restaurant recommendations in NYC using the Google Maps API. Markers were populated on the map using a script and the Google Places API, and users can view in map or list format. Restaurants can be filtered by cuisine, category, location, and price."
 	},
 	{
 		title: "CovidStory",
