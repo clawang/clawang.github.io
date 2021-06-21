@@ -46,7 +46,7 @@ const projects = [
 		link: "https://clawang.github.io/bon-viveur",
 		linkText: "View Demo",
 		tags: "React, Google Maps API",
-		description: "Developed a website to display restaurant recommendations in NYC using the Google Maps API. Markers were populated on the map using a script and the Google Places API, and users can view in map or list format. Restaurants can be filtered by cuisine, category, location, and price."
+		description: "Developed a website to display restaurant recommendations in NYC using the Google Maps API and the Yelp API. Markers were populated on the map using the Google Places API, and users can view in map or list format. Restaurants can be filtered by cuisine, category, location, and price."
 	},
 	{
 		title: "CovidStory",

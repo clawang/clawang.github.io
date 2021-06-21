@@ -20,9 +20,9 @@ class Home extends React.Component {
 
 	handleScroll() {
 	  const currentScrollPos = window.pageYOffset;
-	  console.log(currentScrollPos);
+	  //console.log(currentScrollPos);
 	  let v = currentScrollPos < 700;
-	  console.log(v);
+	  //console.log(v);
 
 	  this.setState({
 	    prevScrollpos: currentScrollPos,
@@ -52,9 +52,9 @@ class Home extends React.Component {
 				<BlogSection title="Recent Work" />
 				<SplitSection img={paris}>
 					<div>
-						<h3>Hey there, I'm Claire, I'm passionate about helping companies develop attractive, functional, and intuitive user experiences. </h3>
+						<h3>Hey there, I'm Claire, and I'm passionate about developing attractive, functional, and intuitive user experiences. </h3>
 						<p>I'm currently a senior at NYU currently studying Computer Science, Web Programming & Applications, and the Business of Entertainment, Media, and Technology. </p>
-						<p>Just a few of my many varied interests include: software development, UX design, and photography, </p>
+						<p>Just a few of my many varied interests include: full-stack development, design, and photography.</p>
 						<p className="read-more-link"><Link to="/about">Read More</Link> ⟶</p>
 					</div>
 				</SplitSection>

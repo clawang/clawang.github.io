@@ -412,6 +412,44 @@
 	background-attachment: fixed;
 }
 
+.footer-wrapper {
+	background: $pink;
+	width: 100%;
+	padding: 5rem 0;
+	box-sizing: border-box;
+	//text-align: center;
+
+	.footer {
+		max-width: 1200px;
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 0 1em;
+	}
+
+	h1 {
+		font-weight: 500;
+		font-size: 3.5em;
+		margin: 0;
+		color: white;
+	}
+
+	h4 {
+		font-family: 'Proxima Nova';
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 0.8em;
+	}
+
+	img {
+		height: 20px;
+		margin: 10px;
+	}
+}
+
 @media (max-width: 1024px) {
 	.blog-wrapper {
 		padding: 0;
@@ -576,5 +614,10 @@
 
 	.gallery {
 		flex-direction: column;
+	}
+
+	.footer-wrapper .footer {
+		display: block;
+		text-align: center;
 	}
 }

@@ -241,11 +241,15 @@ class PhotoDivider extends React.Component {
 
 function Footer(props) {
 	return (
-		<div className="footer">
-			<h1>Contact</h1>
-			<a href="mailto:cyw336@nyu.edu" target="_blank" alt="email" title="Email"><img src={email} /></a>
-			<a href="https://github.com/clawang" target="_blank" alt="github" title="Github"><img src={gh} /></a>
-			<a href="https://www.linkedin.com/in/clawang/" target="_blank" alt="linkedin" title="LinkedIn"><img src={linkedin} /></a>
+		<div className="footer-wrapper">
+			<div className="footer">
+				<h1>Get in touch –</h1>
+				<div className="footer-links">
+					<a href="mailto:cyw336@nyu.edu" target="_blank" alt="email" title="Email"><img src={email} /></a>
+					<a href="https://github.com/clawang" target="_blank" alt="github" title="Github"><img src={gh} /></a>
+					<a href="https://www.linkedin.com/in/clawang/" target="_blank" alt="linkedin" title="LinkedIn"><img src={linkedin} /></a>
+				</div>
+			</div>
 		</div>
 	);
 }

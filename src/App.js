@@ -30,7 +30,7 @@ function App({location})  {
 					          	<Route path="/about" component={About} />
 					          	<Route path="/work" component={Work} />
 					          	<Route path="/tot" component={TOT} />
-					          	<Route path="/hobbies" component={Hobbies} />
+					          	<Route path="/play" component={Hobbies} />
 					          	<Route path="/resume" component={Resume} />
 					          	<Route path="/" component={Home} />
 					        </Switch>
@@ -103,7 +103,7 @@ class NavBar extends React.Component {
 						<div className="nav-container">
 							<NavItem number="01." name="About" link="/about" onClick={this.handleClick} />
 							<NavItem number="02." name="Work" link="/work" onClick={this.handleClick} />
-							<NavItem number="03." name="Hobbies" link="/hobbies" onClick={this.handleClick} />
+							<NavItem number="03." name="Play" link="/play" onClick={this.handleClick} />
 							<NavItem number="04." name="Resume" link="/resume" onClick={this.handleClick} />
 						</div>
 					</div>

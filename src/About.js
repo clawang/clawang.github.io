@@ -26,7 +26,7 @@ const jobs = [
 		title: "Engineering Ambassdaor",
 		company: "Contra",
 		date: "March 2021",
-		description: ["Beta tested new features on the remote work platform and provided UX/UI feedback to improve user experience.","Created articles and content to inform other users about how to get the most value platform."]
+		description: ["Beta tested new features on the remote work platform and provided UX/UI feedback to improve user experience.","Created articles and other content to inform other users about how to get the most value from the platform."]
 	},
 	{
 		title: "UI Engineering Intern",
@@ -67,8 +67,8 @@ class About extends React.Component {
 							<li>Web Programming & Applications</li>
 							<li>Business of Entertainment, Media, and Technology</li>
 						</ul>
-						<p>Although I have many varied interests, what I am passionate about is helping companies develop attractive, functional, and intuitive user experiences, and I believe that having a holistic view of the software I engineer will result in better end products.</p>
-						<p>When I'm not doing that, I'm usually curating new playlists on Spotify, attempting to visit every cafe in the city, or exploring new places.</p>
+						<p>Although I have many varied interests, what I am passionate about is creating attractive, functional, and intuitive user experiences, and I believe that having a holistic view of the software I engineer will result in better end products.</p>
+						<p>When I'm not doing that, I'm usually curating playlists on Spotify, attempting to visit every restaurant in the city, or travelling.</p>
 						<p>Interested in learning more? Please feel free to contact me at <a href="mailto:cyw336@nyu.edu">cyw336@nyu.edu</a>. Looking forward to hearing from you!</p>
 					</div>
 				</PhotoHeaderSection>

@@ -81,30 +81,3 @@ body {
 		transform: translateY(-3px);
 	}
 }
-
-.footer {
-	background: $pink;
-	width: 100%;
-	padding: 5rem 12%;
-	box-sizing: border-box;
-	text-align: center;
-
-	h1 {
-		font-weight: 500;
-		font-size: 2.8em;
-		margin: 0;
-		color: white;
-	}
-
-	h4 {
-		font-family: 'Proxima Nova';
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-size: 0.8em;
-	}
-
-	img {
-		height: 20px;
-		margin: 10px;
-	}
-}
