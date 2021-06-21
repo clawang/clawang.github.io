@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ea2e1c9.chunk.css",
+    "main.css": "/static/css/main.83dbfe92.chunk.css",
     "main.js": "/static/js/main.81341708.chunk.js",
     "main.js.map": "/static/js/main.81341708.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
@@ -8,9 +8,9 @@
     "static/js/2.df106f4f.chunk.js": "/static/js/2.df106f4f.chunk.js",
     "static/js/2.df106f4f.chunk.js.map": "/static/js/2.df106f4f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a9b722598cbb5823ffe5a59ff782cf6c.js": "/precache-manifest.a9b722598cbb5823ffe5a59ff782cf6c.js",
+    "precache-manifest.07f0d46d6ce6d846f43120660fc41d2e.js": "/precache-manifest.07f0d46d6ce6d846f43120660fc41d2e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0ea2e1c9.chunk.css.map": "/static/css/main.0ea2e1c9.chunk.css.map",
+    "static/css/main.83dbfe92.chunk.css.map": "/static/css/main.83dbfe92.chunk.css.map",
     "static/js/2.df106f4f.chunk.js.LICENSE.txt": "/static/js/2.df106f4f.chunk.js.LICENSE.txt",
     "static/media/DefaultStyles.scss": "/static/media/ProximaNova-Regular.bf9f5d50.otf",
     "static/media/amalfi.jpg": "/static/media/amalfi.00e70fa8.jpg",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.e5fc83a6.js",
     "static/js/2.df106f4f.chunk.js",
-    "static/css/main.0ea2e1c9.chunk.css",
+    "static/css/main.83dbfe92.chunk.css",
     "static/js/main.81341708.chunk.js"
   ]
 }
