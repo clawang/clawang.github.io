@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e4ac8aa00f388b881eb5d0e7adf3213",
+    "revision": "858394532cca8cd9cb576b3bbb1dc205",
     "url": "/index.html"
   },
   {
-    "revision": "1cce0667a0be94a3e7f4",
-    "url": "/static/css/main.4f7797c6.chunk.css"
+    "revision": "dae8611ce775ed51fd8c",
+    "url": "/static/css/main.0ea2e1c9.chunk.css"
   },
   {
-    "revision": "4fe8be706e58ce936819",
-    "url": "/static/js/2.9011661b.chunk.js"
+    "revision": "9135b901258ec6d9905b",
+    "url": "/static/js/2.df106f4f.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.9011661b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.df106f4f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1cce0667a0be94a3e7f4",
-    "url": "/static/js/main.45cf8518.chunk.js"
+    "revision": "dae8611ce775ed51fd8c",
+    "url": "/static/js/main.7e92fd13.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
@@ -32,8 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ProximaNova-Regular.bf9f5d50.otf"
   },
   {
-    "revision": "40677108180707590c57467f014f697a",
-    "url": "/static/media/bluestripes.40677108.jpg"
+    "revision": "00e70fa871062a7e26779c54c5d21a6d",
+    "url": "/static/media/amalfi.00e70fa8.jpg"
+  },
+  {
+    "revision": "28883243fd2c030a6c31d4fea8aed3b6",
+    "url": "/static/media/bluestripes.28883243.jpg"
   },
   {
     "revision": "58bcf9a093d6e142852382fa61ae4163",
@@ -48,12 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/covid.49ac4e77.png"
   },
   {
+    "revision": "147543e7d554ebac701db6a904b1f51c",
+    "url": "/static/media/cupoftj2.147543e7.jpg"
+  },
+  {
+    "revision": "dd3778354de91eab103cf56f493b20ee",
+    "url": "/static/media/dametraveler.dd377835.jpg"
+  },
+  {
     "revision": "89c2c0674bdba3d61daf6b1b1e5e82b5",
     "url": "/static/media/github.89c2c067.png"
   },
   {
-    "revision": "02ac94b485adbc7194035bbfec83c089",
-    "url": "/static/media/laylow.02ac94b4.jpg"
+    "revision": "8fcfd8ecc998887997a2c262acc616ff",
+    "url": "/static/media/laylow.8fcfd8ec.jpg"
   },
   {
     "revision": "c54c1027d09bc3a333df8254c677543a",
@@ -68,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mail.9d216170.svg"
   },
   {
-    "revision": "55e435a871b1748f66541069e822c089",
-    "url": "/static/media/paris.55e435a8.jpg"
+    "revision": "944ddf5687c20420e8f69b758a26a200",
+    "url": "/static/media/paris.944ddf56.jpg"
   },
   {
     "revision": "858f360f83ea8724b2710d31ac034016",
@@ -80,12 +92,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/quarantine-wrapped.22b18fc4.png"
   },
   {
-    "revision": "bc01f737aa8af46093f4e5adc478f50f",
-    "url": "/static/media/resume.bc01f737.png"
+    "revision": "2331e2d0d1577fcf00c4dee35e19ed4b",
+    "url": "/static/media/resume.2331e2d0.png"
   },
   {
-    "revision": "dcb6d4d9d6fa0b1806d2e8ba4a232700",
-    "url": "/static/media/resume.dcb6d4d9.pdf"
+    "revision": "e84b5623e77500d4dd154f81be8232cd",
+    "url": "/static/media/resume.e84b5623.pdf"
   },
   {
     "revision": "921c406acf4fdb88b06b356533f0c3d8",
@@ -100,7 +112,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/virtualnyc.36e6d00f.png"
   },
   {
-    "revision": "50160ea6494d9262a1c4fbfe9c0e4097",
-    "url": "/static/media/westvillage.50160ea6.jpg"
+    "revision": "02055639058eef3621acb5d235608ae1",
+    "url": "/static/media/westvillage.02055639.jpg"
   }
 ]);
