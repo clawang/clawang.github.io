@@ -154,7 +154,7 @@ class HeaderSection extends React.Component {
 class PhotoHeaderSection extends React.Component {
 	render() {
 		return (
-			<div className="section-wrapper top-section">
+			<div className={"section-wrapper top-section " + this.props.color}>
 				<div className="photo-header-section-wrapper">
 					{this.props.children}
 					<div className="photo-header-section-photo">

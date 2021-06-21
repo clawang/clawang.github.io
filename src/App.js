@@ -4,7 +4,7 @@ import Home from './Home';
 import About from './About';
 import {Work} from './Work';
 import TOT from './tot';
-import Hobbies from './Hobbies';
+import {Play, AdventureAtWork, BiteClub, CupofTJ, DJI} from './Hobbies';
 import Resume from './Resume';
 import './App.css';
 import './DefaultStyles.scss';
@@ -30,7 +30,11 @@ function App({location})  {
 					          	<Route path="/about" component={About} />
 					          	<Route path="/work" component={Work} />
 					          	<Route path="/tot" component={TOT} />
-					          	<Route path="/play" component={Hobbies} />
+					          	<Route path="/play" component={Play} />
+					          	<Route path="/aaw" component={AdventureAtWork} />
+					          	<Route path="/biteclub" component={BiteClub} />
+					          	<Route path="/cupoftj" component={CupofTJ} />
+					          	<Route path="/dji" component={DJI} />
 					          	<Route path="/resume" component={Resume} />
 					          	<Route path="/" component={Home} />
 					        </Switch>
