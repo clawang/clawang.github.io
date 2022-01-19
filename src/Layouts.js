@@ -4,13 +4,13 @@ import {CSSTransition} from 'react-transition-group';
 import styles from './Layouts.scss';
 import {Router, Link} from 'react-router-dom';
 import wsp from './media/virtualnyc.png';
-import shengji from './media/login.png';
+import genre from './media/genre.png';
 import screen from './media/portfolio.png';
 import tot from './media/tot.png';
 import email from './media/mail.svg';
 import gh from './media/github.png';
 import linkedin from './media/linkedin.svg';
-import wrapped from './media/quarantine-wrapped.png';
+import bv from './media/bv.png';
 
 class StandardSection extends React.Component {
 	render() {
@@ -34,10 +34,10 @@ class BlogSection extends React.Component {
 		this.state = {
 			posts: [
 				{
-					title: "Quarantine Wrapped",
-					src: wrapped,
-					link: "https://quarantine-wrapped.herokuapp.com/",
-					description: "React, node.js, Express, SASS, REST API",
+					src: shengji,
+					title: 'Genre Analyzer',
+					description: 'React, node.js, Express, SASS, REST API',
+					link: 'https://genre-analyzer.herokuapp.com/',
 					local: false
 				},
 				{
@@ -48,12 +48,12 @@ class BlogSection extends React.Component {
 					local: false
 				},
 				{
-					src: shengji,
-					title: 'Real-Time Multiplayer Sheng Ji',
-					description: 'Node, Express, MongoDB, Socket.io, HTML, SASS/CSS, jQuery',
-					link: 'https://multiplayer-sheng-ji.herokuapp.com/',
+					title: "Bon Viveur",
+					src: bv,
+					link: "/bon-viveur",
+					description: "React, SASS, Google Maps API, Yelp API",
 					local: false
-				}
+				},
 			]
 		}
 	}
@@ -119,7 +119,7 @@ class CollageSection extends React.Component {
 					<div className="collage-wrapper">
 						<div className="collage-left">
 							<img src={this.props.pic1} id="photography-link" />
-							<Link to="/hobbies">
+							<Link to={this.props.link}>
 							<p><a className="button" href={this.props.link}>{this.props.linkTitle}</a></p>
 							</Link>
 						</div>
