@@ -42,7 +42,7 @@ class BlogSection extends React.Component {
 				},
 				{
 					src: wsp,
-					title: 'Virtual NYC',
+					title: 'Virtual NYC Pop-Up Book',
 					description: 'HTML, CSS Animation, SVG, Adobe Illustrator, Javascript',
 					link: '/dotw-final-project',
 					local: false
