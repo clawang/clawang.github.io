@@ -33,7 +33,7 @@ async function init() {
 	let loader = new THREE.TextureLoader();
     loader.setCrossOrigin("");
 
-	let bgTexture = await loader.load("./media/clouds-2.jpg");
+	let bgTexture = await loader.load("./media/mesh-1.png");
 	scene.background = bgTexture;
 	const targetWidth = window.innerWidth;
 	const targetHeight = window.innerHeight;
@@ -63,7 +63,7 @@ async function init() {
 
 	new RGBELoader()
 		.setPath( './' )
-		.load( './media/clouds-2.hdr', function ( texture ) {
+		.load( './media/holo.hdr', function ( texture ) {
 
 			texture.mapping = THREE.EquirectangularReflectionMapping;
 
