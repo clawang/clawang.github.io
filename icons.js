@@ -5,7 +5,7 @@ const icons = [
 		name:"Louis the Child",
 		type: 1,
 		title: "The website I designed and developed to support the release of Louis the Child's new beat tape Black Marble.",
-		link: "https://www.louisthechild.com/",
+		link: "https://clawang.github.io/louis-the-child",
 		left: 0.083,
 		top: 0.1875
 	},

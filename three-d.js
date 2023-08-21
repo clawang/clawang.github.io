@@ -4,6 +4,7 @@ import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 
 let camera, scene, renderer;
 let logo, oval;
+let  mouseX = 0, mouseY = 0;
 
 await init();
 // render();
@@ -13,7 +14,10 @@ async function init() {
 	// const container = document.createElement( 'div' );
 	// document.body.appendChild( container );
 
-	renderer = new THREE.WebGLRenderer({ alpha: true });
+	renderer = new THREE.WebGLRenderer({ 
+		alpha: true,
+		antialias: true
+	});
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	//renderer.setClearColor( 0xffffff, 0 ); // the default
@@ -68,13 +72,13 @@ async function init() {
 		});
 
 	const gltfLoader = new GLTFLoader().setPath( 'models/' );
-	const logoGltf = await gltfLoader.loadAsync( 'logo-vertical.glb');
+	const logoGltf = await gltfLoader.loadAsync( 'name-seal.glb');
 	//const ovalGltf = await gltfLoader.loadAsync( 'oval.glb');
 
 	logo = logoGltf.scene;
 	//oval = ovalGltf.scene;
-	// logo.rotation.y = 49.9;
-	// logo.rotation.x = 0.1;
+	// logo.rotation.y = 43.7;
+	// logo.rotation.x = -0.1;
 
 	scene.add(logo);
 	scene.add(oval);
@@ -91,8 +95,9 @@ async function init() {
 function animate() {
 	requestAnimationFrame( animate );
 
-	logo.rotation.y += 0.005;
-	//oval.rotation.y += 0.01;
+	logo.rotation.x = mouseY / 3;
+	logo.rotation.y = mouseX / 3;
+	//logo.rotation.y += 0.001;
 
 	renderer.render( scene, camera );
 };
@@ -114,3 +119,14 @@ function render() {
 	//animate();
 
 }
+
+var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+window.addEventListener('mousemove', (e) => {
+    mouseX = (e.clientX - document.body.clientWidth/2) / document.body.clientWidth;
+    mouseY = (e.clientY - height/2) / height;
+});
