@@ -57,7 +57,7 @@ button:active {
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background: url('./media/mesh-1.png');
+	background: url('./media/nosignal.jpeg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -69,13 +69,15 @@ button:active {
 	top: 0;
 	left: 0;
 	box-sizing: border-box;
+	z-index: 5;
+	pointer-events: none; 
 }
 
 #icons-container {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	z-index: 1;
+	z-index: 3;
 }
 
 .icon-wrapper {
@@ -83,16 +85,19 @@ button:active {
 	width: 100px;
 	text-align: center;
 	cursor: pointer;
+	transition: 0.1s linear;
 }
 
 .icon-wrapper img {
-	width: 60px;
+	max-width: 80px;
+	max-height: 100px;
 	display: inline-block;
+	margin-bottom: 10px;
 }
 
 .icon-wrapper p {
 	font-family: Anonymous Pro,Neue Haas Grotesk, Helvetica;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: white;
 	font-weight: 800;
 /*	-webkit-text-stroke-width: 1px;
@@ -104,7 +109,8 @@ button:active {
 }
 
 .icon-wrapper:active {
-	outline: 1px solid white;
+	/* outline: 1px solid white; */
+	transform: scale(0.9);
 }
 
 .start-bar {
@@ -162,7 +168,7 @@ button:active {
 .start-menu-sidebar {
 	width: 20px;
 	/*height: 100%;*/
-	background: #462ee2;
+	background: #1f1fcd;
 }
 
 .start-menu-options {
@@ -178,7 +184,7 @@ button:active {
 }
 
 .start-menu-option:hover, .start-menu-option:active  {
-	background: #462ee2;
+	background: #1f1fcd;
 	color: white;
 }
 
@@ -250,6 +256,7 @@ button:active {
   background: #eae9e7;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
   z-index: 2;
+  pointer-events: auto; 
 }
 
 .window-title-bar {
@@ -269,7 +276,7 @@ button:active {
 }
 
 .window-wrapper.active .window-title-bar {
-	background:  #462ee2;
+	background:  #1f1fcd;
 }
 
 .window-title-bar img {
@@ -398,7 +405,7 @@ button:active {
 
 .content-window h2 {
 	font-family: Anonymous Pro,Neue Haas Grotesk;
-	color: #462ee2;
+	color: #1f1fcd;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -435,7 +442,7 @@ button:active {
 
 #videography-page h3 {
 	font-family: Anonymous Pro,Neue Haas Grotesk;
-	color: #462ee2;
+	color: #1f1fcd;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -577,6 +584,7 @@ button:active {
   position: absolute;
   width: 100%;
   overflow: hidden;
+  z-index: 2;
 }
 
 #grain::after {
@@ -720,13 +728,18 @@ button:active {
 	#scrolling-banner-text p {
 		font-size: 12px !important;
 	}
-}
 
-@media (max-width: 600px) {
+	canvas {
+		display: none;
+		opacity: 0;
+	}
+
 	.start-button {
 		width: 70px;
 	}
+}
 
+@media (max-width: 600px) {
 	.start-bar-time {
 		width: 65px !important;
 	}

@@ -1,6 +1,6 @@
 const icons = [
 	{
-		img: "./media/computer-icon.png",
+		img: "./media/louis2.png",
 		id: "computer",
 		name:"Louis the Child",
 		type: 1,
@@ -10,17 +10,17 @@ const icons = [
 		top: 0.1875
 	},
 		{
-		img: "./media/cd-icon-1.png",
+		img: "./media/fred.png",
 		id: "fred",
 		name:"Fred Again.. Generator",
 		type: 1,
 		title: "A website that given your name and a picture of you would give you a fake screenshot of a song Fred Again.. wrote about you in his Actual Life 3 album.",
 		link: 'https://fred-again.netlify.app/',
-		left: 0.1583,
-		top: 0.375
+		left: 0.1883,
+		top: 0.395
 	},
 	{
-		img: "./media/paint-icon.png",
+		img: "./media/iphone.png",
 		id: "paint",
 		name:"Instagram Infographic Generator",
 		type: 1, //0 is window, 1 is link
@@ -30,17 +30,17 @@ const icons = [
 		top: 0.125
 	},
 	{
-		img: "./media/notebook-icon.png",
+		img: "./media/food.png",
 		id: "notebook",
 		name:"Restaurant Recs",
 		type: 1,
 		title: "A website I created for anyone needing restaurant, cafe, or bar recommendations in NYC or SF.",
 		link: 'https://clawang.github.io/bon-viveur/',
-		left: 0.2,
-		top: 0.7425
+		left: 0.25,
+		top: 0.7025
 	},
 	{
-		img: "./media/cd-icon.png",
+		img: "./media/cassette.png",
 		id: "cd",
 		name:"Playlist Genre Analyzer",
 		type: 1,
@@ -50,7 +50,7 @@ const icons = [
 		top: 0.3125
 	},
 	{
-		img: "./media/doc-icon.png",
+		img: "./media/resume.png",
 		id: "doc",
 		name:"Resume",
 		type: 1,
@@ -60,18 +60,17 @@ const icons = [
 		top: 0.75
 	},
 	{
-		img: "./media/globe-icon.png",
+		img: "./media/nyc.png",
 		id: "globe",
 		name:"New York Illustration",
 		type: 1,
 		title: "A web based illustration I made for my Drawing on the Web class, featuring three different locations in NYC.",
 		link: 'https://clawang.github.io/dotw-final-project',
 		left: 0.0917,
-		top: 0.5625
-
+		top: 0.5825
 	},
 	{
-		img: "./media/covid-icon.png",
+		img: "./media/game.png",
 		id: "covid",
 		name:"Covid Story",
 		type: 1,
@@ -81,7 +80,7 @@ const icons = [
 		top: 0.5
 	},
 	{
-		img: "./media/internet-icon.png",
+		img: "./media/about.png",
 		id: "web",
 		name:"About",
 		type: 0,

@@ -33,8 +33,8 @@ async function init() {
 	let loader = new THREE.TextureLoader();
     loader.setCrossOrigin("");
 
-	let bgTexture = await loader.load("./media/mesh-1.png");
-	scene.background = bgTexture;
+	let bgTexture = await loader.load("./media/nosignal.jpeg");
+	//scene.background = bgTexture;
 	const targetWidth = window.innerWidth;
 	const targetHeight = window.innerHeight;
 	const imageWidth = 1920;
@@ -44,19 +44,21 @@ async function init() {
 	const factor = imageAspect / targetAspect;
 	// When factor larger than 1, that means texture 'wilder' than target。 
 	// we should scale texture height to target height and then 'map' the center  of texture to target， and vice versa.
-	scene.background.offset.x = factor > 1 ? (1 - 1 / factor) / 2 : 0;
-	scene.background.repeat.x = factor > 1 ? 1 / factor : 1;
-	scene.background.offset.y = factor > 1 ? 0 : (1 - factor) / 2;
-	scene.background.repeat.y = factor > 1 ? 1 : factor;
-	//scene.background = new THREE.Color(0xffffff);
+	// scene.background.offset.x = factor > 1 ? (1 - 1 / factor) / 2 : 0;
+	// scene.background.repeat.x = factor > 1 ? 1 / factor : 1;
+	// scene.background.offset.y = factor > 1 ? 0 : (1 - factor) / 2;
+	// scene.background.repeat.y = factor > 1 ? 1 : factor;
+	// scene.background = new THREE.Color(0x000000);
 
-	const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+	const light = new THREE.AmbientLight( 0xffffff ); // soft white light
 	scene.add( light );
+	const light2 = new THREE.AmbientLight( 0xffffff ); // soft white light
+	scene.add( light2 );
 	const spotLight = new THREE.SpotLight( 0xffffff );
-	spotLight.position.set( 100, 1000, 100 );
+	spotLight.position.set( 100, 100, 100 );
 	scene.add(spotLight);
 	const spotLight2 = new THREE.SpotLight( 0xffffff );
-	spotLight2.position.set( 100, 100, 100 );
+	spotLight2.position.set( 10, 10, 10 );
 	scene.add(spotLight2);
 
 	camera.position.z = 3;
@@ -72,7 +74,7 @@ async function init() {
 		});
 
 	const gltfLoader = new GLTFLoader().setPath( 'models/' );
-	const logoGltf = await gltfLoader.loadAsync( 'name-seal.glb');
+	const logoGltf = await gltfLoader.loadAsync( 'name-seal-red.glb');
 	//const ovalGltf = await gltfLoader.loadAsync( 'oval.glb');
 
 	logo = logoGltf.scene;

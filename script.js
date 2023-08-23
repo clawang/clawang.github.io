@@ -331,13 +331,14 @@ function closeMenu() {
 function setMobile() {
 	if(window.innerWidth > window.innerHeight || window.innerWidth > 600) return;
 	mobileMode = true;
-
 	const canvas = document.querySelector('canvas');
-	canvas.style.zIndex = "3";
-	document.querySelector('.mobile-mode').style.display = "block";
+	canvas.style.display = "none";
+	// const canvas = document.querySelector('canvas');
+	// canvas.style.zIndex = "3";
+	// document.querySelector('.mobile-mode').style.display = "block";
 
-	canvas.addEventListener('click', fadeOutCanvas);
-	document.getElementById('start-button-text').textContent = "Claire";
+	// canvas.addEventListener('click', fadeOutCanvas);
+	// document.getElementById('start-button-text').textContent = "Claire";
 }
 
 function fadeOutCanvas() {
