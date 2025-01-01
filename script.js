@@ -5,7 +5,7 @@ const popups = [
 		elmnt: null,
 		status: 0,
 		id: 'about-page',
-		icon: './media/internet-icon.png',
+		icon: './media/travel-icon.png',
 		name: 'About'
 	},
 	{
@@ -52,9 +52,13 @@ window.addEventListener("load", function() {
 		div.classList.add("icon-wrapper");
 		div.id = icon.id;
 
+		var divInner = document.createElement('div');
+		divInner.classList.add("icon-image-wrapper");
+		div.appendChild(divInner);
+
 		var img = document.createElement('img');
 		img.setAttribute("src", icon.img);
-		div.appendChild(img);
+		divInner.appendChild(img);
 
 		var p = document.createElement('p');
 		const text = document.createTextNode(icon.name);

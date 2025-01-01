@@ -16,8 +16,8 @@ const icons = [
 		type: 1,
 		title: "A website that given your name and a picture of you would give you a fake screenshot of a song Fred Again.. wrote about you in his Actual Life 3 album.",
 		link: 'https://fred-again.netlify.app/',
-		left: 0.1883,
-		top: 0.395
+		left: 0.0917,
+		top: 0.5825
 	},
 	{
 		img: "./media/iphone.png",
@@ -60,22 +60,22 @@ const icons = [
 		top: 0.75
 	},
 	{
-		img: "./media/nyc.png",
+		img: "./media/news.png",
 		id: "globe",
-		name:"New York Illustration",
+		name:"Custom Connections",
 		type: 1,
-		title: "A web based illustration I made for my Drawing on the Web class, featuring three different locations in NYC.",
-		link: 'https://clawang.github.io/dotw-final-project',
-		left: 0.0917,
-		top: 0.5825
+		title: "A website to create and play games based on the NYT Connections.",
+		link: 'https://custom-connections-game.vercel.app/',
+		left: 0.1883,
+		top: 0.395,
 	},
 	{
 		img: "./media/game.png",
 		id: "covid",
-		name:"Covid Story",
+		name:"Pookiemon",
 		type: 1,
-		title: 'A web game my friend and I made for a class based on maple story.',
-		link: 'https://clawang.github.io/ic-midterm-project',
+		title: 'A web game inspired by Pokemon I made for my boyfriend for our first anniversary.',
+		link: 'https://clawang.github.io/pookiemon',
 		left: 0.7417,
 		top: 0.5
 	},
