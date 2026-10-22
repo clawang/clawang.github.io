@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "BootzyTM";
+  src: url("assets/BootzyTM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -32,7 +39,6 @@ nav li {
   margin: 0 20px;
   list-style-type: none;
   font-size: 20px;
-  transition: 0.2s linear;
   text-transform: uppercase;
   min-width: 100px;
   z-index: 1;
@@ -40,7 +46,13 @@ nav li {
   cursor: pointer;
 }
 
-nav li:hover {
+nav li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+nav li a:hover {
   color: #e11914;
 }
 
@@ -56,7 +68,7 @@ nav li:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .background::after {
@@ -82,7 +94,7 @@ nav li:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+  padding: 0 20px 50px;
 }
 
 .item {
@@ -120,6 +132,17 @@ nav li:hover {
   display: block;
 }
 
+.content {
+  width: 1200px;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.content p {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 767px) {
   .items-wrapper {
     flex-direction: column;
@@ -127,5 +150,13 @@ nav li:hover {
 
   .item {
     width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  #logo {
+    order: -1;
   }
 }
